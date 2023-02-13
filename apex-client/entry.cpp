@@ -13,8 +13,9 @@
 
 int main( )
 {
+	/*
 	if ( integrity::check( ) )
-	{
+	{*/
 		io::initiate( "apex" );
 
 		while ( !FindWindowA( nullptr, xs( "Apex Legends" ) ) )
@@ -110,9 +111,9 @@ int main( )
 
 		std::thread([]()
 			{ renderer::start(xs("Apex Legends")); }).detach();
-	}
+	/*}
 	else
-		exit( NULL );
+		exit( NULL );*/
 
 	return 0;
 }
